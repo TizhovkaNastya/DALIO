@@ -1,0 +1,77 @@
+.solution {
+
+		// .solution__container
+
+		&__container {
+            display: flex;
+            flex-direction: row;
+		}
+}
+.check {
+    // .check__mark
+
+    &__mark {
+        list-style: none;
+        list-style-image: url(../assets/icons/check\ mark.svg);
+    }
+}
+.solution {
+    background: rgb(255,201,62);
+    background: linear-gradient(90deg, rgba(255,201,62,1) 38%, rgba(53,63,91,1) 38%);
+    // .solution__image
+
+    &__image {
+        display: flex ;
+        margin-top: 2.5rem;
+    }
+
+    // .solution__picture
+
+    &__picture { 
+        max-width: 630px;
+        max-height: 660px;
+    }
+
+    // .solution__information
+
+    &__information {
+        display: flex;
+        flex-direction: column;
+        margin: 3rem 1rem;
+    }
+
+    // .solution__title
+
+    &__title {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 45px;
+        color: #FFFFFF;
+        margin: 3rem 0rem 0rem 1rem; 
+        width: 535px;
+    }
+    // .solution__subtitle
+   
+    &__subtitle {
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 24px;
+        color: #FFFFFF;
+        margin-bottom: 1rem; 
+        margin-left: -1.5rem;
+    }
+  
+    // .solution__text
+
+    &__text {
+        max-width: 90%;
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #E0E5F3;
+        margin-bottom: 2rem;
+        margin-left: 0.6rem;
+    }
+}
+

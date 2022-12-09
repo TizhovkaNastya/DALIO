@@ -1,0 +1,44 @@
+.media {
+
+    // .media__container
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin: 10% 4%;
+    }
+
+    // .media__title
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 48px;
+        color: #FFFFFF;
+    }
+
+    // .media__subtitle
+
+    &__subtitle {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+        color: #E0E5F3;
+    }
+}
+.media {
+
+    // .media__column
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        justify-items: center;
+    }
+}
+

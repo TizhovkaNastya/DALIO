@@ -1,0 +1,128 @@
+.creative {
+    // .creative__button
+
+    &__button {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+        text-align: center;
+        color: #0A142F;
+        padding: 15px 20px;
+        background: #FFC93E;
+        border-radius: 30px;
+        margin-top: 3rem;
+        border: #FFC93E;
+        cursor: pointer;
+    }
+    &__button:hover {
+        padding: 20px 25px;
+        box-shadow: 12px 12px 2px 1px rgba(0, 0, 150, .2);
+    }
+
+    // .creative__picture-1
+
+    &__picture-1 {
+        max-width: 264px;
+        margin-bottom: 1.5rem;
+        
+    }
+
+    // .creative__picture-2
+
+    &__picture-2 {
+        max-width: 220px;
+        margin-left: 2.8rem;
+    }
+
+    // .creative__picture-3
+
+    &__picture-3 {
+        max-width: 220px;
+        margin-bottom: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    // .creative__picture-4
+
+    &__picture-4 {
+        max-width: 264px;
+        
+    }
+}
+.picture {
+
+    // .picture__first-column
+
+    &__first-column {
+        display: flex;
+        flex-direction: column;
+        margin-right: 2rem;
+    }
+}
+.creative {
+
+    // .creative__second-column
+
+    &__second-column {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.creative {
+
+    // .creative__picture
+
+    &__picture {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+.container {
+
+    // .container__hero
+
+    &__hero {
+        margin-top: 50px;
+        display: flex;
+        justify-content: center;
+    }
+}
+.crative {
+
+    // .crative__information
+
+    &__information {
+        margin: 2rem 0rem 0rem 3rem;
+    }
+}
+
+.crative {
+
+    // .crative__title
+
+    &__title {
+        margin-bottom: 2.5rem;
+        font-family: 'Inter';
+        font-weight: 700;
+        font-size: 48px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+
+    }
+}
+.cretive {
+
+    // .cretive__subtitle
+
+    &__subtitle {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        color: #E0E5F3;
+        max-width: 90%;
+    }
+}
