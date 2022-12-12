@@ -9,3 +9,18 @@ body{
 html{
     scroll-behavior: smooth;
 }
+@media (max-with:1140px){
+    .container{
+        max-width: 970px;
+    }
+}
+@media (max-with:992px){
+    .container{
+        max-width: 750px;
+    }
+}
+@media (max-with:767px){
+    .container{
+        max-width: none;
+    }
+} 

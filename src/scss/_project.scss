@@ -1,7 +1,5 @@
 .projects {
     
-    // .projects__button
-
         &__button {
             display: flex;
             background: transparent;
@@ -20,15 +18,11 @@
 }
 .navigation {
 
-    // .navigation__title
-
     &__title {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-
-    // .navigation__information
 
     &__information {
         display: flex;
@@ -36,8 +30,6 @@
     }
 }
 .title {
-
-    // .title__name
 
     &__name {
         font-family: 'Inter';
@@ -50,8 +42,6 @@
 }
 .project {
 
-    // .project__navigation
-
     &__navigation {
         display: flex;
         flex-direction: row;
@@ -62,8 +52,6 @@
     }
 }
 .project-navigation {
-
-    // .project-navigation__link
 
     &__link {
         text-decoration: none;
@@ -76,27 +64,18 @@
         color: #FFC93E;
     }
 }
-.information {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    // .information__check
+.information {    
 
     &__check {
         display: flex;
         flex-direction: column;
     }
 
-    // .information__link
-
     &__link {
-        box-sizing: border-box;
-        flex-basis: calc( 100% / 12 * 6 - 30px );
-        margin: 2rem 1rem;
+        margin: 2rem auto;
         max-width: 554px;
+        max-height: 550px;
     }
-
-    // .information__title
 
     &__title {
         font-family: 'Inter';
@@ -106,8 +85,6 @@
         color: #FFFFFF;
         margin-left: 2rem;
     }
-
-    // .information__subtitle
 
     &__subtitle {
         font-family: 'Inter';
@@ -119,14 +96,42 @@
         max-width: 553px;
     }
 }
-@media (max-width: 760px){
-    .information__link {
-        flex-basis: calc( 100% / 12 * 2 - 30px );
-    }   
+@media (max-width: 770px){
+    .navigation__information {
+        flex-direction: column;
+    } 
+     .information__check{
+        margin: 0 auto;
+     }
+     .project__navigation {
+        margin: 0px 5px;
+        
+    }
+    .project-navigation__link {
+        font-size: 20px;
+    }
 }
+
 @media (max-width: 450px){
+    .navigation__information {
+        flex-direction: column;
+    }
     .information__link {
-        flex-basis: calc( 100% / 12 * 3 - 30px );
-    }   
+        max-width: 300px;
+    }
+    .information__title {
+        font-size: 18px;
+    }
+    .information__subtitle{
+        line-height: 20px;
+        font-size: 16px;
+    }
+    .project__navigation {
+        margin: 0px 10px;
+        
+    }
+    .project-navigation__link {
+        font-size: 10px;
+    }
 }
 

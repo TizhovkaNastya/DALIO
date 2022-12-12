@@ -1,5 +1,4 @@
 .creative {
-    // .creative__button
 
     &__button {
         font-family: 'Inter';
@@ -20,39 +19,25 @@
         box-shadow: 12px 12px 2px 1px rgba(0, 0, 150, .2);
     }
 
-    // .creative__picture-1
-
     &__picture-1 {
         max-width: 264px;
         margin-bottom: 1.5rem;
         
     }
-
-    // .creative__picture-2
-
     &__picture-2 {
         max-width: 220px;
         margin-left: 2.8rem;
     }
-
-    // .creative__picture-3
-
     &__picture-3 {
         max-width: 220px;
         margin-bottom: 1.5rem;
         margin-top: 4rem;
     }
-
-    // .creative__picture-4
-
     &__picture-4 {
-        max-width: 264px;
-        
+        max-width: 264px;        
     }
 }
 .picture {
-
-    // .picture__first-column
 
     &__first-column {
         display: flex;
@@ -62,27 +47,19 @@
 }
 .creative {
 
-    // .creative__second-column
-
     &__second-column {
         display: flex;
         flex-direction: column;
     }
 }
-
 .creative {
-
-    // .creative__picture
 
     &__picture {
         display: flex;
         flex-direction: row;
     }
 }
-
 .container {
-
-    // .container__hero
 
     &__hero {
         margin-top: 50px;
@@ -92,16 +69,11 @@
 }
 .crative {
 
-    // .crative__information
-
     &__information {
         margin: 2rem 0rem 0rem 3rem;
     }
 }
-
 .crative {
-
-    // .crative__title
 
     &__title {
         margin-bottom: 2.5rem;
@@ -110,12 +82,9 @@
         font-size: 48px;
         text-transform: capitalize;
         color: #FFFFFF;
-
     }
 }
 .cretive {
-
-    // .cretive__subtitle
 
     &__subtitle {
         font-family: 'Inter';
@@ -124,5 +93,47 @@
         line-height: 30px;
         color: #E0E5F3;
         max-width: 90%;
+    }
+}
+@media (max-width: 770px){
+    .container__hero {
+        margin: 50px;
+        flex-direction: column;
+    }
+    .creative__button{
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 450px){
+    .container__hero {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .creative__picture-1 {
+        width: 140px;
+        margin-bottom: 0.3rem;
+        margin-left: 25px;
+    }
+    .creative__picture-2 {
+        max-width: 120px;
+
+    }
+    .creative__picture-3{
+        max-width: 120px;
+        margin-bottom: 0.3rem;
+    }
+    .creative__picture-4 {
+        max-width: 140px;
+        
+    }
+    .picture__first-column {
+        justify-content: flex-start;
+        margin-right: 0.3rem;
+        margin-top: 40px;
+    }
+    .creative__second-column{
+        display: flex;
+        flex-direction: column;
     }
 }

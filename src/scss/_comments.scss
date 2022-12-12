@@ -1,7 +1,5 @@
 .comments {
 
-    // .comments__title
-
     &__title {
         font-family: 'Inter';
         font-weight: 700;
@@ -10,42 +8,31 @@
         margin: 5rem 0rem 0rem 2rem;
     }
 
-    // .comments__block
-
     &__block {
         background: #353F5B;
         border-radius: 50px;
         margin: 2rem 1rem;
         padding: 2rem 2rem;
+        box-sizing: border-box; 
     }
 }
 .block {
 
-    // .block__comments
-
     &__comments {
         display: flex;
-        flex-direction: row;   
     }
-
-    // .block__quotes
 
     &__quotes {
         max-width: 62px;
         opacity:calc(0.2);
     }
 
-    // .block__user
-
     &__user {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
     }
 }
 .content {
-
-    // .content__text
 
     &__text {
             font-family: 'Inter';
@@ -58,24 +45,18 @@
 }
 .user {
 
-    // .user__name
-
     &__name {
        display: flex;
        flex-direction: column;
        margin: 1rem 8rem 0rem 0.5rem;
 
     }
-    // .user__sky
-
     &__sky {
         margin-top: 1.8rem;
     }
 }
 
 .comentator {
-
-		// .comentator__name
 
 		&__name { 
             font-family: 'Inter';
@@ -84,8 +65,6 @@
             color: #FFFFFF;  
 		}
 
-		// .comentator__profrssion
-
 		&__profrssion {
             font-family: 'Inter';
             font-weight: 400;
@@ -93,4 +72,23 @@
             color: #FFC93E;
 
 		}
+}
+@media (max-width: 770px){
+    .block__comments {
+        flex-direction: column;
+    }    
+}
+@media (max-width: 450px){
+    .block__comments {
+        flex-direction: column;
+    }    
+    .content__text{
+        font-size: 16px;
+    }
+    .block__user{
+        width: 100px;
+    }
+    .user__sky{
+       display: none;
+    }
 }

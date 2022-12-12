@@ -1,15 +1,11 @@
 .media {
 
-    // .media__container
-
     &__container {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin: 10% 4%;
     }
-
-    // .media__title
 
     &__title {
         display: flex;
@@ -19,8 +15,6 @@
         font-size: 48px;
         color: #FFFFFF;
     }
-
-    // .media__subtitle
 
     &__subtitle {
         font-family: 'Inter';
@@ -32,8 +26,6 @@
 }
 .media {
 
-    // .media__column
-
     &__column {
         display: flex;
         flex-direction: column;
@@ -42,3 +34,22 @@
     }
 }
 
+@media (max-width: 760px){
+    .media__title {
+        font-size: 35px;
+    }
+    .media__subtitle {
+        font-size: 25px;
+    } 
+    .media__column {
+        padding-right: 20px;
+    }
+}
+@media (max-width: 450px){
+    .media__container {
+        flex-direction: column;
+    }
+    .media__column {
+        margin-top: 60px;
+    }
+}

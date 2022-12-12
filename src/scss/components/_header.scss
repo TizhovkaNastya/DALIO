@@ -1,7 +1,4 @@
 .container {
-
-    // .container__header
-
     &__header {
         display: flex;
         flex-direction: row;
@@ -11,9 +8,6 @@
     }
 }
 .main-navigation {
-
-    // .main-navigation__link
-
     &__link {
         text-decoration: none;
         font-family: 'Inter';
@@ -28,20 +22,14 @@
     }
 }
 .header-menu {
-
-    // .header-menu__icon
-
-    &__icon::before {
+    &__icon {
         cursor: pointer;
-        position:absolute;
-        width: 300px;
-        height: 300px;
-        left: 1140px;
-        top: 300px;
-        background: #BE229C;
-        filter: blur(250px);
-        transform: matrix(1, 0, 0, -1, 0, 0);
     }    
+}
+@media (max-width: 450px){
+    .main-navigation__link  {
+        display: none;
+    }       
 }
 
 

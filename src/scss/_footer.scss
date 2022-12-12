@@ -4,8 +4,6 @@
 }
 .background {
 
-	// .background__form
-
 	&__form {
 		margin-top: 3rem;
 		padding: 2rem;
@@ -21,8 +19,6 @@
 }
 .forms-form {
 
-	// .forms-form__text
-
 	&__text {
 		font-family: 'Inter';
 		font-weight: 600;
@@ -33,18 +29,15 @@
 }
 .forms {
 
-	// .forms__form-email
-
 	&__form-email {
-		width: 450px;
+		max-width: 450px;
+		width: 90%;
 		background-color: transparent;
 		outline: none;
 		border: none;
 		border-bottom: 1px solid  #0A142F;
 		padding-bottom: 0.5rem;
 	}
-
-	// .forms__form-button
 
 	&__form-button {
 		background-color: transparent;
@@ -53,8 +46,6 @@
 }
 .firm {
 
-	// .firm__contacts
-
 	&__contacts {
 		display: flex;
 		flex-direction: row;
@@ -62,8 +53,6 @@
 	}
 }
 .adress {
-
-	// .adress__information
 
 	&__information {
 		font-family: 'Inter';
@@ -75,14 +64,11 @@
 }
 .contact {
 
-	// .contact__infomation
-
 	&__infomation {
 		font-family: 'Inter';
 		font-weight: 600;
 		font-size: 18px;
 		color: #FFFFFF;
-
 		a{
 			text-decoration: none;
 			color: #FFFFFF;
@@ -90,8 +76,6 @@
 	}
 }
 .about {
-
-	// .about__site
 
 	&__site {
 		display: flex;
@@ -104,8 +88,6 @@
 }
 }
 .row {
-
-	// .row__form
 
 	&__form {
 		display: flex;
@@ -125,5 +107,32 @@
 	padding-right: 1.5rem;
 	cursor: pointer;
 }
-
+@media (max-width: 450px){
+	.forms__form-email {
+		width: 250px;
+	}
+}
+@media (max-width: 450px){
+	.row__form{
+		flex-direction: column;
+	}
+	.firm__contacts {
+		flex-direction: column;
+		margin: 1rem;
+		justify-content: center;
+		h5{
+			text-align: center;
+		}
+	}
+	.about__site {
+		display: flex;
+		flex-direction: column;
+	h5{
+		text-align: center;
+	}
+	.network{
+		margin: 0px 170px 30px 170px;
+	}
+}	
+}
 

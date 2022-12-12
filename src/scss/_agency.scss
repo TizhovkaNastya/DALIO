@@ -1,5 +1,4 @@
 .agency {
-    // .agency__title
 
     &__title {
         font-family: 'Inter';
@@ -20,8 +19,6 @@
         left: -200px;
     }
 
-    // .agency__subtitle
-
     &__subtitle {
         margin: 50px 0px 0px 140px;
         max-width: 480px;
@@ -33,23 +30,15 @@
         color: #E0E5F3;
     }
 
-    // .agency__button
-
     &__button {
         padding: 15px 20px;
         margin-left: -255px;
-        background: #FFC93E;
-        border-radius: 30px;
-        border-color: #FFC93E;
-        cursor: pointer;
     }
     &__button:hover {
         -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
         transform: scale(1.2);
       }
-
-    // .agency__picture-1
 
     &__picture-1 {
         float: right;
@@ -60,21 +49,16 @@
         border-radius: 50px;
     }
 
-    // .agency__picture-2
-
     &__picture-2 {
         float: left;
         margin: 65px 0px 0px -130px;
-        width: 241px;
-        height: 307px;
+        max-width: 241px;
+        max-height: 307px;
         background: url(.jpg), #000000;
         border-radius: 30px;
     }
 }
 .container {
-
-    // .container__information
-
     &__information {
         display: flex;
         flex-direction: column;
@@ -82,9 +66,6 @@
     }
 }
 .background {
-
-    // .background__text-word
-
     &__text-word {
         position: relative;
         left: -200px;
@@ -92,5 +73,77 @@
         cursor: pointer;
     }
 }
+.title {
+    &__mobile {
+        display: none;
+    }
+}
 
+@media (max-width: 770px){
+    .agency__title{
+        font-size: 90px;
+    }
+    .agency__picture-1 {
+        max-width: 400px;
+        max-height: 455px;
+    }
+    .background__text-word {
+        display: none;
+    }
+}
 
+@media (max-width: 450px){
+     .agency__title{position: relative;
+        left: 50px;
+        font-size: 70px;
+     } 
+	.title__mobile {
+            font-size: 70px;
+		}
+
+    .agency__subtitle{
+        position: relative;
+        top: -320px;
+        left: -250px;
+        width: 300px;
+        font-size: 18px; 
+    }
+    .agency__button {
+        position: relative;
+        top: -540px;
+        left: -60px;
+        font-size: 18px;
+        padding: 15px 10px;
+        cursor: pointer;
+    }
+    .agency__button :hover {
+        -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+        transform: scale(1.2);
+      }
+    .agency__picture-1{
+        position: relative;
+        top: 250px;
+        left:-120px;
+        float: none;
+        max-width: 327px;
+        max-height: 305px;
+      
+    }
+    .agency__picture-2{
+        position: relative;
+        float: none;
+        top: 50px ;
+        left: -140px;
+        width: 157px;
+        height: 200px;
+  }
+     .background__text-word{
+        display: none;
+    }
+    .container__information {
+        display: flex;
+        flex-direction: column;
+       
+    }
+}
